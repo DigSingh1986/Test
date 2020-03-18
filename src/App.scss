@@ -1,0 +1,1135 @@
+/* Author Prashant Kumar
+/* Copyright Smart Energy Water
+
+body
+  height: 100%
+  width: 100%
+  font-style: normal
+  background: #f9f9f9
+
+ul, li
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+i, cite, em, var, address, dfn
+  font-style: normal
+
+.App
+  text-align: center
+
+.App-logo
+  animation: App-logo-spin infinite 20s linear
+  height: 40vmin
+
+.App-header
+  background-color: #282c34
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  font-size: calc(10px + 2vmin)
+  color: white
+
+.App-link
+  color: #61dafb
+
+.theme-color
+  background: #005984 !important
+
+.dropdown-theme a
+  &:hover
+    background-color: #005984 !important
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+    -webkit-border-radius: .125rem
+    border-radius: .125rem
+    color: #fff
+    -webkit-transition: all .1s linear
+    -o-transition: all .1s linear
+    transition: all .1s linear
+  i
+    font-size: 35px
+    margin-bottom: 10px
+  span
+    font-size: 14px
+    text-transform: uppercase
+  i, span
+    font-style: normal
+    display: block
+  &:hover
+    i, span
+      color: #fff
+
+.navbar
+  &.navbar-dark
+    padding: 0
+  .nav-item .nav-link
+    padding-top: 1rem
+    padding-bottom: 1rem
+
+.FooterMain
+  padding: 1rem
+  margin-top: 30px
+
+footer .tagline-wrapper
+  padding: 30px 0px
+
+.tagline-box img
+  max-width: 300px
+
+i.fa
+  padding: 0 5px 0 0
+
+@keyframes App-logo-spin
+  from
+    transform: rotate(0deg)
+
+  to
+    transform: rotate(360deg)
+
+
+/* Navigation
+
+.nav-item .dropdown.show
+  position: static
+
+.navbar .navbar-nav .dropdown-menu
+  width: 100%
+  border-radius: 0
+  z-index: 99
+  border: none
+  background: #e1f5f9
+
+.MegaMenu
+  > .container ul.list-group > li.list-group-item
+    padding: 0
+    background: none
+    border: none
+  .list-group li.list-group-item > a
+    padding: 10px 15px
+    background: none
+    border: none
+    color: #005984 !important
+    font-weight: 400
+    display: block
+
+.theme-color .navbar-nav
+  flex-direction: row
+  width: 100%
+  justify-content: space-around !important
+
+.nav-link .badge
+  position: relative
+  top: -10px
+  border-radius: 50%
+  width: 20px
+  height: 20px
+  vertical-align: middle
+  align-items: center
+  align-self: center
+  line-height: 15px
+  font-size: 12px
+
+/* Navigation
+
+.copyright > p
+  color: #fff
+  margin: 0
+
+.group-links
+  margin: 0
+  text-align: right
+  > li
+    display: inline-block
+    padding: 0 .5rem
+    > a
+      color: #ffffff
+      padding: .5rem 0
+
+section.skinny-footer
+  padding: 30px 0px
+
+/* Dashboard Page
+
+.username-box
+  padding: 10px 15px
+  text-align: left
+  p
+    margin: 0
+    color: #005984
+    font-size: 22px
+    font-weight: 500
+
+.dashboard-wrapper
+  margin-top: 15px
+  margin-bottom: 15px
+
+.pageheading-wrapper
+  margin: 25px 0 0
+  display: flex
+  width: 100%
+
+.right-top-select
+  float: right
+  margin: 0
+  text-align: right
+  width: 100%
+  > li
+    padding: 5px 0 10px 15px
+    width: 50%
+    float: left
+    > select
+      width: 145px
+  .MultiSelect .Header
+    background-color: #fff
+    border: 1px solid #cccccc
+    text-align: left
+
+.JumboBox
+  float: left
+  width: 100%
+  padding: 2rem 15px
+  margin: 5px 0 15px 0
+  height: 335px
+  background: #ffffff
+
+.PowerUsageModule
+  border: solid 1px #ccc
+  height: 335px
+
+.Billing_ModuleBox
+  &.JumboBox
+    background: #005984
+    color: #ffffff
+  h2
+    font-size: 3.5rem
+    small
+      font-size: 30px
+      position: relative
+      top: -20px
+  p
+    font-size: 16px
+    text-transform: uppercase
+
+.sect2
+  height: 335px
+
+.Billing_ModuleBox
+  a
+    font-size: 16px
+    color: #ffffff
+    &:hover
+      font-size: 16px
+      color: #ffffff
+  button
+    font-size: 18px
+    background: #ffffff
+    padding: 10px 55px
+    color: #005984 !important
+
+.viewBillsButton > i.material-icons
+  vertical-align: bottom
+  padding: 0px 5px
+
+.navbar.navbar-dark .navbar-nav .nav-item
+  &.active
+    border-bottom: solid 4px #e0f6fb
+  a
+    text-transform: uppercase
+    position: relative
+    &.active:after
+      border-bottom: solid 4px #e0f6fb
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+  ul li a
+    text-transform: capitalize
+
+.MiniBox_Right
+  border: solid 1px #dcdcdc
+  float: left
+  width: 100%
+  padding: 2rem 15px
+  margin: 5px 0 15px 0
+  background: #ffffff
+  > ul.list-group > a.list-group-item
+    color: #005984
+    font-size: 18px
+    > i
+      font-size: 29px
+      padding: 0 15px 0 0
+
+.material-icons
+  vertical-align: bottom
+
+.Quick_LinkBox
+  height: 335px
+  >
+    h3
+      text-align: left
+      margin: 0
+      color: #005984
+      text-transform: uppercase
+      font-size: 24px
+      margin-bottom: 10px
+      font-weight: 400
+    .list-group a
+      border: solid 0px #ffffff
+      text-align: left
+      border-radius: 0
+      padding: 10px 0
+
+.list-group-item > div
+  align-items: center
+  float: left
+
+.listboxitems
+  display: block
+  text-align: left
+  > h5
+    margin: 0
+  &.rightsect
+    text-align: right
+    > a
+      padding-top: 15px
+      display: block
+      color: #005984 !important
+
+.dashboard_swipeitems
+  border: solid 1px #dcdcdc
+  ul > .list-group-item
+    border: none
+    border-bottom: solid 1px #dcdcdc
+    margin: 0
+    &:nth-last-child(1)
+      border: none
+
+.BorderNone
+  border: none !important
+
+.load-more
+  color: #005984 !important
+  font-size: 16px
+  display: inline-block
+  padding: 20px 10px
+  width: 150px
+  align-self: center
+
+.jumboimg_section
+  float: left
+  width: 100%
+  height: 130px
+  img
+    max-width: 100%
+    height: 100%
+
+.Quick_LinkBox.MiniBox_Right.sect2
+  padding: 5px 15px
+
+.TabsWrapper
+  background: #fff
+  .TabsChild
+    color: #666666
+    padding: 15px 0 10px 0
+    &[aria-selected="true"]
+      color: #005984
+
+.tableMargin
+  margin: 0
+
+.autopay_tabs_wrapper
+  width: 100%
+  background: #fff
+  float: left
+  > .autopay_tabs_header
+    width: 50%
+    box-shadow: none
+
+.pageheading-box
+  padding: 10px 0px
+  text-align: left
+  p, h1
+    margin: 0
+    color: #005984
+    font-size: 21px
+
+.buttonclass.right
+  position: absolute
+  right: 0px
+
+.JumboBox > h3
+  text-align: left
+  margin: 0
+  color: #005984
+  text-transform: uppercase
+  font-size: 24px
+  margin-bottom: 10px
+  font-weight: 400
+
+.PortfolioSelect-selectEmpty-3
+  margin-top: 0
+  border: 1px solid #ccc
+  border-radius: 4px
+  background: #fff
+  padding: 0px 4px
+
+.wrapper-box
+  float: left
+  width: 100%
+
+.profileContainer, .settingContainer
+  background: #fff
+  float: left
+  width: 100%
+
+/* Account page
+
+.profiledata-row
+  float: left
+  width: 100%
+  padding: 15px 15px
+  text-align: left
+  border-bottom: solid 1px #ccc
+  color: #666
+  label
+    font-weight: 500
+    margin: 0
+    vertical-align: middle
+  span
+    margin: 0
+    vertical-align: middle
+  a
+    margin: 0
+    vertical-align: middle
+    text-transform: uppercase
+
+/* Account Page
+/* CurrentBill Page
+
+.curentbillcontainer
+  float: left
+  width: 100%
+
+.JumboBoxcurrentbill
+  float: left
+  width: 100%
+  padding: 2rem 15px
+  margin: 5px 0 15px 0
+  background: #ffffff
+
+.Billing_ModuleBox.JumboBoxcurrentbill
+  background: #005984
+  color: #ffffff
+
+.curentbillcontainer table
+  tr td
+    background: #fff !important
+  thead th span
+    font-size: 15px
+    color: #037fbb
+    padding-top: 2px
+    vertical-align: text-top
+
+.tabs_wrapper table thead th span, .tableMargin table thead th span
+  font-size: 15px
+  color: #037fbb
+  padding-top: 2px
+  vertical-align: text-top
+
+.curentbillcontainer table thead th
+  border-right: none !important
+  border-left: none !important
+
+.expandedbill
+  padding: 30px 50px
+  margin: 10px auto
+  background: #f5fcfd
+  display: block
+  width: 100%
+  float: left
+
+.expandedbill_inner
+  width: 100%
+  float: left
+  font-size: 15px
+  .Leftbill
+    width: 20%
+    float: left
+    text-align: left
+    margin: 0
+    padding: 5px 10px
+  .Rightbill
+    width: 80%
+    float: left
+    text-align: left
+    margin: 0
+    padding: 5px 10px
+
+/* Portfolio Page
+
+.portfolio_pageHeading > h1.MainHeading
+  display: inline-block
+
+.AddPortolioButton
+  float: right
+  > button
+    background: #005984 !important
+    FONT-SIZE: 14px
+    letter-spacing: 1px
+
+button.btn-primary
+  background: #005984 !important
+  FONT-SIZE: 14px
+  letter-spacing: 1px
+
+.FormWrapper
+  margin: 0 auto
+  > p
+    font-size: 16px
+    margin: 40px 0 10px 0
+    text-align: center
+    font-weight: 400
+
+.TextFieldWrapper
+  width: 100%
+  margin: 10px 0 !important
+  border-radius: 0
+
+.FormButtonsArea
+  margin: 10px 0
+  text-align: right
+  > .ButtonPrimary
+    padding: 10px 35px
+    margin: 0px 0 0 10px
+
+.MultiSelect
+  margin: 10px 0
+  width: 100%
+  float: left
+
+.right-top-select .MultiSelect
+  margin: 0 0
+
+.MultiSelect
+  ul.OptionList
+    background: #fff
+    .Option__renderer
+      border-bottom: solid 1px #dcdcdc
+  > .Header > .Header__value
+    height: 55px
+    line-height: 55px
+
+.right-top-select .MultiSelect > .Header > .Header__value
+  height: 40px
+  line-height: 40px
+
+.MultiSelect > .Header > .Header__controls .Header__reset
+  cursor: pointer
+  color: #949ca6
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+/* Portfolio Page
+
+.ServiceCard
+  max-width: 100%
+  margin: 15px 0 15px 0
+  text-align: left
+  padding: 10px 15px
+
+.ServiceCardContent
+  i, h3
+    color: #005984
+    font-size: 19px
+    margin: 7px 0
+  i
+    font-size: 30px
+
+.CardAnchor > a
+  color: #005984
+  font-weight: 400
+
+/* Rate Analysis
+
+.RateAnalysisList
+  float: left
+  width: 100%
+  margin: 0
+  > li
+    float: left
+    width: 33.33%
+    border: solid 0px #dcdcdc
+    background-color: #fbfbfb
+    &:nth-child(1)
+      background-color: #ffffff
+    &:nth-last-child(1)
+      border-left: solid 1px #dcdcdc
+
+.PP_List
+  display: block
+  background: #005984
+  height: 95px
+  padding: 15px 15px
+  border-bottom: solid 1px #dcdcdc
+
+.PP_ListFirstChild
+  display: block
+  background: #ffffff
+
+.PP_List >
+  h3
+    color: #fff
+    font-size: 16px
+    text-transform: uppercase
+    margin: 10px 0
+  h5
+    color: #fff
+    font-size: 18px
+    text-transform: uppercase
+    margin: 5px 0
+
+ul.fddata > li
+  width: 100%
+  display: block
+  padding: 10px 15px
+  border-bottom: dotted 1px #dcdcdc
+  > p
+    text-align: center
+    display: block
+    margin: 0
+    font-size: 16px
+    font-weight: 400
+    color: #555555
+
+.RateAnalysisList > li:nth-child(1) > ul.fddata > li p
+  text-align: left
+  color: #929292
+
+.DownloadSection
+  padding: 25px 0
+  text-align: left
+  display: flex
+  width: 100%
+  a > i
+    vertical-align: middle
+    color: #666666
+  p > span
+    padding-left: 20px
+    font-size: 15px
+    color: #777777
+    vertical-align: middle
+
+.RACard
+  padding: 20px
+  margin: 35px 0
+  text-align: left
+
+/* Rate Analysis
+
+.nav-item:hover .MegaMenu
+  opacity: 1
+  display: block
+  -webkit-animation: slide-up .3s ease-out
+  -moz-animation: slide-up .3s ease-out
+  animation: slide-up .3s ease-out
+
+@-webkit-keyframes slide-up
+  0%
+    opacity: 0
+    -webkit-transform: translateY(10%)
+
+  100%
+    opacity: 1
+    -webkit-transform: translateY(0)
+
+
+@-moz-keyframes slide-up
+  0%
+    opacity: 0
+    -moz-transform: translateY(10%)
+
+  100%
+    opacity: 1
+    -moz-transform: translateY(0)
+
+
+.AnimatedTR
+  opacity: 1
+  -webkit-animation: slide-down .3s ease-out
+  -moz-animation: slide-down .3s ease-out
+  animation: slide-down .3s ease-out
+
+@-webkit-keyframes slide-down
+  0%
+    opacity: 0
+    -webkit-transform: translateY(-10%)
+
+  100%
+    opacity: 1
+    -webkit-transform: translateY(0)
+
+
+@-moz-keyframes slide-down
+  0%
+    opacity: 0
+    -moz-transform: translateY(-10%)
+
+  100%
+    opacity: 1
+    -moz-transform: translateY(0)
+
+
+.tabi
+  background: #c9c99c
+
+.CustomSwitchStyling
+  margin: 0
+
+.Info_Icons
+  padding: 0px 10px
+  > .material-icons
+    font-size: 19px
+    vertical-align: middle
+
+.bluearea
+  background: #f5fcfd
+  text-align: left
+  height: 100%
+  min-height: 600px
+  .enrollboxarea
+    border: 1px solid #ccc
+    padding: 20px
+    margin: 100px 10px 0
+    b
+      font-size: 16px
+      color: #0c78a5
+      margin: 0 0 5px
+      padding: 0
+      display: block
+      font-weight: normal
+    p
+      font-size: 14px
+      color: #666666
+      margin: 0
+      padding: 0
+
+.paybilltopspace
+  margin-top: 50px
+  position: relative
+  > .bluearea
+    position: Absolute
+    right: 0
+
+.billingpayarea
+  padding: 30px 20px
+  text-align: left
+
+.stepone, .steptwo
+  margin: 0
+  padding: 0
+  width: 100%
+
+.stepone i, .steptwo i
+  margin: 0
+  padding: 0
+  font-size: 14px
+  font-style: normal
+
+.accountarea
+  margin: 15px 0
+  padding: 30px 0px
+  width: 80%
+
+.grouppay
+  margin-bottom: 30px
+
+.accountarea
+  em
+    padding: 0
+    margin: 0
+    color: #0c78a5
+    font-size: 17px
+    font-weight: 500
+  u
+    padding: 5px 0px 8px
+    font-size: 13px
+    margin: 10px 0px 0px
+    color: #666666
+    text-decoration: none
+    border-bottom: 1px solid #ccc
+    display: flex
+    a
+      text-decoration: none
+      color: #005984
+      padding: 0
+      font-weight: 500
+      float: right
+
+.radiogrup
+  margin-left: 0 !important
+  width: 100%
+
+.amountdatadiv > span + span
+  width: 100%
+
+.paybuttons
+  width: 40%
+  float: right
+  margin-bottom: 50px
+  text-align: right
+
+.cancelbtn
+  margin: 6px 0px 0px
+  padding: 9px 20px 0 0 !important
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: 500
+  float: left
+  color: #0c78a5 !important
+
+.addedaccountdetails
+  float: left
+  width: 100%
+  font-size: 14px
+  padding: 20px 0px 0
+  margin-top: 20px
+  border-top: 1px solid #ccc
+
+.finalamount
+  margin: 10px 0px 0px
+  padding: 0
+  color: #0c78a5
+  font-size: 15px
+  font-weight: 700
+
+address
+  margin-bottom: 0 !important
+  font-style: normal
+  line-height: inherit
+  font-size: 12px
+  font-weight: normal
+  color: #666666
+
+.steptwo u
+  font-size: 13px
+  width: 60%
+  font-weight: 500
+
+.checkboxarea
+  margin: 40px 0px 0px
+  padding: 0
+  font-size: 14px
+  align-items: center
+  display: flex
+  span
+    padding: 0px 5px 0 0
+    vertical-align: top
+
+.success
+  margin: 20px 0px 0px
+  padding: 30px 100px
+  background: #f5fcfd
+  font-size: 14px
+  border-top: 1px solid #dedddd
+  text-align: center
+  color: #6b6b6b
+  font-weight: 500
+
+h2.titlehead
+  color: #0c78a5
+  font-size: 26px
+  margin: 0
+  padding: 0px 17px 9px
+
+.ChoosePaymentDate
+  width: 100%
+  display: block
+  margin: 0 0 10px 0
+
+.react-date-picker
+  width: 100%
+  .react-date-picker__wrapper
+    display: flex
+    border: none
+    border-bottom: solid 1px #878787
+    width: 100%
+    padding: 15px 10px
+    background: #e8e8e8
+    border-radius: 3px 3px 0 0
+  .react-date-picker__calendar
+    z-index: 2
+
+.CreditCardUsageWarning.CreditCardUsageWarning
+  border-radius: 0
+  border: solid 1px #e8af52
+  border-radius: 0
+  padding: 10px 15px
+  box-shadow: none
+  margin: 5px 0 20px 0
+  >
+    i
+      font-size: 21px
+      color: #e8af52
+      width: 10%
+      float: left
+      max-width: 35px
+    p
+      float: left
+      width: 90%
+      font-size: 14px
+      color: #666666
+
+.billingpayarea ol.progtrckr > li.progtrckr-done:before
+  content: "\E876"
+  font-family: Material Icons
+
+.successarea
+  margin: 0 auto
+  .float-left, .billingpayarea
+    padding: 30px 0 !important
+
+.successmsag
+  padding: 0 45px !important
+
+.successtext
+  text-align: center !important
+  color: #0c78a5
+  font-size: 20px !important
+  font-weight: 500 !important
+
+.accountareastep2
+  border-top: 0
+
+.iconsuccess
+  font-size: 36px
+  margin-bottom: 7px
+
+.buttonareasuccess
+  margin: 0 auto
+  float: left
+  width: 100%
+  text-align: center
+
+.enrolllink
+  font-size: 14px
+  font-weight: 500
+  color: #0c78a5
+  padding: 10px 0 0 !important
+
+.btn-primary
+  border-radius: 5px !important
+
+a.btn-primary
+  background: #005984 !important
+  FONT-SIZE: 14px
+  letter-spacing: 1px
+  border-radius: 5px
+  display: inline-block
+
+.paynow
+  background: #ffffff
+  FONT-SIZE: 14px
+  color: #005984 !important
+  font-weight: 500
+  margin: 0 auto
+  width: 15%
+  border-radius: 5px
+
+.MuiToolbar-root-31
+  display: none !important
+
+.tabs_wrapper .autopay_tabs_header
+  box-shadow: none !important
+
+.checkpadding > span
+  margin-top: 7px
+
+.depositamount
+  background: #f5fcfd
+  margin: 20px 0px 10px
+  padding: 30px 30px
+  span
+    display: block
+    margin: 0
+    padding: 0
+    color: #0f638b
+    font-size: 13px
+    font-weight: 500
+    text-transform: uppercase
+  b
+    display: block
+    margin: 0
+    padding: 0
+    color: #1082b8
+    font-weight: bold
+    i.helpicon
+      vertical-align: top
+      padding-top: 4px
+      color: #9f9f9f
+
+.paymethoddesign
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12) !important
+
+.InputClass > input
+  text-align: right
+  width: 70px
+  background: #f4f4f4
+  padding: 0
+  position: absolute
+  right: 0
+  padding: 15px
+
+.btn
+  padding: 0.54rem 2.14rem !important
+
+.enrolprimary
+  margin-top: 9px !important
+
+table > thead > tr > th > span
+  text-transform: uppercase
+  font-size: 16px
+  color: #005882 !important
+  font-weight: 700
+
+.MultiSelect .OptionList .Option
+  padding: 0 10px
+  margin: 0
+  > .Option__renderer > span
+    padding: 0
+    &.Option__label
+      font-size: 14px
+      font-weight: 400
+      display: inline-block
+      text-align: left
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+      width: 100%
+      padding: 0px 5px
+
+.SATable >
+  thead > tr > th, tbody > tr > td
+    padding: 4px 15px
+
+.stepheading i.stepsspace
+  margin-left: -12px !important
+  margin-top: 4px
+  float: left
+  width: 100%
+  margin-bottom: 0px
+  font-weight: 500
+  color: #737373
+  font-size: 16px
+
+/**Universal Stepper css*
+
+ol.progtrckr
+  margin: 0px 0px 0px -13px !important
+  padding: 0px 0px 14px
+  list-style-type: none
+  border-bottom: 1px solid #ccc
+  width: 83%
+  li
+    display: inline-block
+    text-align: center
+    padding: 0
+    margin: 0 0 20px
+    cursor: pointer
+    span
+      padding: 0 100px !important
+
+@media (max-width: 650px)
+  .progtrckr li span
+    display: none
+
+.progtrckr em
+  display: none
+  font-weight: 700
+  padding-left: 1rem
+
+@media (max-width: 650px)
+  .progtrckr em
+    display: inline
+
+ol.progtrckr li
+  &:nth-child(2)
+    border: none !important
+  &.progtrckr-todo
+    color: silver
+  &.progtrckr-doing
+    color: black
+    border-bottom: 4px solid #c0c0c0
+  &.progtrckr-done
+    color: black
+    border-bottom: 4px solid #005984
+  &:after
+    content: "\00a0\00a0"
+  &:before
+    position: relative
+    top: 16px
+    float: left
+    left: 0% !important
+  &.progtrckr-todo
+    &:before
+      content: "2"
+      color: white
+      background-color: silver
+      width: 1.4em
+      line-height: 1.4em
+      border-radius: 50%
+      font-size: 14px
+    &:hover:before
+      color: #0FA0CE
+  &.progtrckr-doing
+    &:before
+      content: "\2022"
+      color: white
+      background-color: #005984
+      width: 1.2em
+      line-height: 1.2em
+      border-radius: 1.2em
+    &:hover:before
+      color: #0FA0CE
+  &.progtrckr-done
+    &:before
+      content: "\2713"
+      color: white
+      background-color: #005984
+      width: 1.2em
+      line-height: 1.2em
+      border-radius: 1.2em
+    &:hover:before
+      color: #0FA0CE
+
+a.addpaymentmethod
+  color: #0c78a5
+  display: block
+  margin: 10px 0 0
+  padding: 0
+  font-weight: 500
+
+.depositamount_stepsecond b
+  display: block
+  margin: 15px 0px
+  padding: 0
+  color: #1082b8
+  font-weight: bold
+  i.helpicon
+    vertical-align: top
+    padding-top: 4px
+    color: #9f9f9f
+    font-size: 16px
+
+.termscondition
+  padding: 10px 15px
+  strong
+    display: block
+    padding-bottom: 10px
+
+.popuputtons
+  border: none !important

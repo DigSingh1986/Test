@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'NewsGothicFamily';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/NewsGothicFamily.ttf'); /* IE9 Compat Modes */
+    src: local('Open Sans'), local('OpenSans'),
+         url('./assets/fonts/NewsGothicFamily.ttf') format('truetype'), /* Safari, Android, iOS */
+  }
+  @font-face {
+    font-family: 'NewsGothicFamily-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/NewsGothic-Light.ttf'); /* IE9 Compat Modes */
+    src: local('Open Sans'), local('OpenSans'),
+         url('./assets/fonts/NewsGothic-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+  }  
+  @font-face {
+    font-family: 'NewsGothicFamily-SemiBold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/NewsGothic-SemiBold.ttf'); /* IE9 Compat Modes */
+    src: local('Open Sans'), local('OpenSans'),
+         url('./assets/fonts/NewsGothic-SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
+  }
+  @font-face {
+    font-family: 'NewsGothicFamily-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/NewsGothic-Bold.ttf'); /* IE9 Compat Modes */
+    src: local('Open Sans'), local('OpenSans'),
+         url('./assets/fonts/NewsGothic-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+    font-family: "NewsGothicFamily", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#f9f9f9 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*-- Created By Manoj Sharma --*/
+
+.dropdownstyle {
+    background: #fff !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.dropdownstyle div div {
+    padding: 6px 11px 7px !important;
+}
+
+.dropdownstyle:before {
+    border-bottom:none !important;
+}
+
+.tableMargin {
+    box-shadow:none !important;
+}
+
+.pageheading-box p, .pageheading-box h1 {
+    font-size:27px !important;
+    font-family: 'NewsGothicFamily';
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: .65;
+    background: #c1c1c1 !important;
+    color: black !important;
+}
+
+.MuiCheckbox-colorSecondary-246.MuiCheckbox-checked-242 {
+    color: #0790bd !important;
+}
+
+.autopay_tabs_wrapper > .autopay_tabs_header {
+    width: 360px !important;
+}
+

@@ -28,7 +28,7 @@
     "mdbootstrap": "4.7.0",
     "mdbreact": "4.13.0",
     "memoize-one": "5.0.4",
-    "merge": "^1.2.1",
+    "merge": "^2.1.1",
     "oidc-client": "^1.6.1",
     "query-string": "6.7.0",
     "react": "^16.0.0",
